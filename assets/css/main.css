@@ -1,0 +1,27 @@
+body {
+  background: radial-gradient(#f0f0f0, #bebebe);
+  min-height: 740px;
+  font-family: "Open Sans";
+  font-size: 32px;
+}
+h1,
+h2 {
+  font-weight: 300;
+}
+.step {
+  width: 900px;
+  padding: 40px;
+  line-height: 1.5;
+  opacity: 0.3;
+  transition: opacity 1s;
+}
+.step.active {
+  opacity: 1;
+}
+#overview {
+  display: none;
+}
+.impress-on-overview .step {
+  opacity: 1;
+  cursor: pointer;
+}
