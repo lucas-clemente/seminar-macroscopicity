@@ -5,7 +5,7 @@ body {
   background: -ms-radial-gradient(#f0f0f0, #bebebe);
   background: radial-gradient(#f0f0f0, #bebebe);
   min-height: 740px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 32px;
 }
 h1,
@@ -19,11 +19,18 @@ a {
 a:hover {
   text-decoration: underline;
 }
+b {
+  font-weight: 600;
+}
 .centered {
   text-align: center;
 }
+.pull-right {
+  float: right;
+}
 .step {
   width: 900px;
+  height: 700px;
   padding: 40px;
   line-height: 1.5;
   opacity: 0.3;
@@ -34,15 +41,31 @@ a:hover {
   opacity: 1;
 }
 .slide {
-  width: 900px;
-  height: 700px;
   padding: 40px 60px;
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   color: #666666;
 }
-#overview {
+#intro-experiments img {
+  width: 200px;
+}
+.exp-image {
+  text-align: center;
+}
+.exp-image img {
+  height: 75%;
+}
+.impress-on-intro-experiments .exp-image {
+  opacity: 1;
+}
+.impress-on-intro-experiments2 #intro-experiments {
+  opacity: 1;
+}
+.impress-on-intro-experiments2 .exp-image {
+  opacity: 1;
+}
+.invisible {
   display: none;
 }
 .impress-on-overview .step {

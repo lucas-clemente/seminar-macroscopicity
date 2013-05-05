@@ -5,7 +5,7 @@ body {
   background: -ms-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
   background: radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
   min-height: 740px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 32px;
 }
 
@@ -22,12 +22,21 @@ a {
   }
 }
 
+b {
+  font-weight: 600;
+}
+
 .centered {
   text-align: center;
 }
 
+.pull-right {
+  float: right;
+}
+
 .step {
   width: 900px;
+  height: 700px;
   padding: 40px;
   line-height: 1.5;
   opacity: 0.3;
@@ -40,8 +49,6 @@ a {
 }
 
 .slide {
-  width: 900px;
-  height: 700px;
   padding: 40px 60px;
   background-color: white;
   border: 1px solid rgba(0, 0, 0, .3);
@@ -49,7 +56,28 @@ a {
   color: rgb(102, 102, 102);
 }
 
-#overview { display: none }
+#intro-experiments {
+  img {
+    width: 200px;
+  }
+}
+
+.exp-image {
+  text-align: center;
+
+  img {
+    height: 75%;
+  }
+}
+
+.impress-on-intro-experiments .exp-image { opacity: 1; }
+.impress-on-intro-experiments2 {
+  #intro-experiments { opacity: 1; }
+  .exp-image { opacity: 1; }
+}
+
+
+.invisible { display: none }
 
 .impress-on-overview .step {
   opacity: 1;
