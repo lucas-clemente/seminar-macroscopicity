@@ -1,4 +1,8 @@
 body {
+  background: -webkit-radial-gradient(#f0f0f0, #bebebe);
+  background: -moz-radial-gradient(#f0f0f0, #bebebe);
+  background: -o-radial-gradient(#f0f0f0, #bebebe);
+  background: -ms-radial-gradient(#f0f0f0, #bebebe);
   background: radial-gradient(#f0f0f0, #bebebe);
   min-height: 740px;
   font-family: "Open Sans";
@@ -8,15 +12,35 @@ h1,
 h2 {
   font-weight: 300;
 }
+a {
+  color: #005580;
+  text-decoration: inherit;
+}
+a:hover {
+  text-decoration: underline;
+}
+.centered {
+  text-align: center;
+}
 .step {
   width: 900px;
   padding: 40px;
   line-height: 1.5;
   opacity: 0.3;
   transition: opacity 1s;
+  box-sizing: border-box;
 }
 .step.active {
   opacity: 1;
+}
+.slide {
+  width: 900px;
+  height: 700px;
+  padding: 40px 60px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  color: #666666;
 }
 #overview {
   display: none;
