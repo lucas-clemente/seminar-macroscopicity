@@ -97,6 +97,19 @@ b {
   }
 }
 
+@keyframes rotate-full {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to { 
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.buckyball {
+  animation: rotate-full 15s linear infinite;
+}
+
 .magnetomech-setup {}
 
 @keyframes magnetomech-oscillate {

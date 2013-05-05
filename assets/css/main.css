@@ -103,6 +103,80 @@ b {
 	height: 75%;
 }
 
+@keyframes "rotate-full" {
+ from {
+    -webkit-transform: rotate(0deg);
+   	-moz-transform: rotate(0deg);
+   	-o-transform: rotate(0deg);
+   	-ms-transform: rotate(0deg);
+   	transform: rotate(0deg);
+ }
+ to {
+    -webkit-transform: rotate(360deg);
+   	-moz-transform: rotate(360deg);
+   	-o-transform: rotate(360deg);
+   	-ms-transform: rotate(360deg);
+   	transform: rotate(360deg);
+ }
+
+}
+
+@-moz-keyframes rotate-full {
+ from {
+   -moz-transform: rotate(0deg);
+   transform: rotate(0deg);
+ }
+ to {
+   -moz-transform: rotate(360deg);
+   transform: rotate(360deg);
+ }
+
+}
+
+@-webkit-keyframes "rotate-full" {
+ from {
+   -webkit-transform: rotate(0deg);
+   transform: rotate(0deg);
+ }
+ to {
+   -webkit-transform: rotate(360deg);
+   transform: rotate(360deg);
+ }
+
+}
+
+@-ms-keyframes "rotate-full" {
+ from {
+   -ms-transform: rotate(0deg);
+   transform: rotate(0deg);
+ }
+ to {
+   -ms-transform: rotate(360deg);
+   transform: rotate(360deg);
+ }
+
+}
+
+@-o-keyframes "rotate-full" {
+ from {
+   -o-transform: rotate(0deg);
+   transform: rotate(0deg);
+ }
+ to {
+   -o-transform: rotate(360deg);
+   transform: rotate(360deg);
+ }
+
+}
+
+.buckyball {
+	-webkit-animation: rotate-full 15s linear infinite;
+	-moz-animation: rotate-full 15s linear infinite;
+	-ms-animation: rotate-full 15s linear infinite;
+	-o-animation: rotate-full 15s linear infinite;
+	animation: rotate-full 15s linear infinite;
+}
+
 @keyframes "magnetomech-oscillate" {
  from {
     -webkit-transform: translate(-40px, 0);
