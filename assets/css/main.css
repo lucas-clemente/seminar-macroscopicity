@@ -25,6 +25,9 @@ b {
 .centered {
   text-align: center;
 }
+.centered-vertical {
+  margin-top: 230px;
+}
 .pull-right {
   float: right;
 }
@@ -47,6 +50,20 @@ b {
   border-radius: 10px;
   color: #666666;
 }
+.invisible {
+  display: none;
+}
+.visible-present {
+  opacity: 0 !important;
+}
+.visible-present.present {
+  opacity: 1 !important;
+}
+.highlight {
+  background-color: rgba(200, 200, 200, 0.8);
+  border-radius: 10px;
+  padding: 10px;
+}
 #intro-experiments img {
   width: 200px;
 }
@@ -58,15 +75,6 @@ b {
 }
 .impress-on-intro-experiments .exp-image {
   opacity: 1;
-}
-.impress-on-intro-experiments2 #intro-experiments {
-  opacity: 1;
-}
-.impress-on-intro-experiments2 .exp-image {
-  opacity: 1;
-}
-.invisible {
-  display: none;
 }
 .impress-on-overview .step {
   opacity: 1;

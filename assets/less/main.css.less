@@ -1,3 +1,8 @@
+@slide-width: 900px;
+@slide-height: 700px;
+@slide-padding-vertical: 40px;
+@slide-padding-horizontal: 60px;
+
 body {
   background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
   background: -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
@@ -30,13 +35,17 @@ b {
   text-align: center;
 }
 
+.centered-vertical {
+  margin-top: @slide-height / 2 - 120px;
+}
+
 .pull-right {
   float: right;
 }
 
 .step {
-  width: 900px;
-  height: 700px;
+  width: @slide-width;
+  height: @slide-height;
   padding: 40px;
   line-height: 1.5;
   opacity: 0.3;
@@ -49,12 +58,34 @@ b {
 }
 
 .slide {
-  padding: 40px 60px;
+  padding: @slide-padding-vertical @slide-padding-horizontal;
   background-color: white;
   border: 1px solid rgba(0, 0, 0, .3);
   border-radius: 10px;
   color: rgb(102, 102, 102);
 }
+
+.invisible { display: none }
+
+// !important used so that they remain invisible on overview step
+.visible-present {
+  opacity: 0 !important;
+
+  &.present {
+    opacity: 1 !important;
+  }
+}
+
+.highlight {
+  background-color:rgba(200, 200, 200, 0.8);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+
+// -----------------------------------------------------------------
+// --- Slide specific styles ---------------------------------------
+// -----------------------------------------------------------------
 
 #intro-experiments {
   img {
@@ -71,13 +102,6 @@ b {
 }
 
 .impress-on-intro-experiments .exp-image { opacity: 1; }
-.impress-on-intro-experiments2 {
-  #intro-experiments { opacity: 1; }
-  .exp-image { opacity: 1; }
-}
-
-
-.invisible { display: none }
 
 .impress-on-overview .step {
   opacity: 1;
