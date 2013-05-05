@@ -99,82 +99,44 @@ b {
 	text-align: center;
 }
 
-.exp-image img,.exp-image video {
-	height: 75%;
-}
-
-@keyframes "rotate-full" {
- from {
-    -webkit-transform: rotate(0deg);
-   	-moz-transform: rotate(0deg);
-   	-o-transform: rotate(0deg);
-   	-ms-transform: rotate(0deg);
-   	transform: rotate(0deg);
- }
- to {
-    -webkit-transform: rotate(360deg);
-   	-moz-transform: rotate(360deg);
-   	-o-transform: rotate(360deg);
-   	-ms-transform: rotate(360deg);
-   	transform: rotate(360deg);
- }
-
-}
-
-@-moz-keyframes rotate-full {
- from {
-   -moz-transform: rotate(0deg);
-   transform: rotate(0deg);
- }
- to {
-   -moz-transform: rotate(360deg);
-   transform: rotate(360deg);
- }
-
-}
-
-@-webkit-keyframes "rotate-full" {
- from {
-   -webkit-transform: rotate(0deg);
-   transform: rotate(0deg);
- }
- to {
-   -webkit-transform: rotate(360deg);
-   transform: rotate(360deg);
- }
-
-}
-
-@-ms-keyframes "rotate-full" {
- from {
-   -ms-transform: rotate(0deg);
-   transform: rotate(0deg);
- }
- to {
-   -ms-transform: rotate(360deg);
-   transform: rotate(360deg);
- }
-
-}
-
-@-o-keyframes "rotate-full" {
- from {
-   -o-transform: rotate(0deg);
-   transform: rotate(0deg);
- }
- to {
-   -o-transform: rotate(360deg);
-   transform: rotate(360deg);
- }
-
+.exp-image img,.exp-image video,.exp-image div.placeholder {
+	height: 420px;
 }
 
 .buckyball {
-	-webkit-animation: rotate-full 15s linear infinite;
-	-moz-animation: rotate-full 15s linear infinite;
-	-ms-animation: rotate-full 15s linear infinite;
-	-o-animation: rotate-full 15s linear infinite;
-	animation: rotate-full 15s linear infinite;
+	position: absolute;
+	top: 0;
+	left: 240px;
+
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+.present .buckyball {
+	-webkit-filter: blur(10px);
+}
+
+.present #buckyball-left {
+	-webkit-transform: translate(-250px, 0);
+	-moz-transform: translate(-250px, 0);
+	-o-transform: translate(-250px, 0);
+	-ms-transform: translate(-250px, 0);
+	transform: translate(-250px, 0);
+}
+
+.present #buckyball-right {
+	-webkit-transform: translate(250px, 0);
+	-moz-transform: translate(250px, 0);
+	-o-transform: translate(250px, 0);
+	-ms-transform: translate(250px, 0);
+	transform: translate(250px, 0);
+}
+
+.magnetomech-setup {
+	position: absolute;
 }
 
 @keyframes "magnetomech-oscillate" {
@@ -243,11 +205,13 @@ b {
 
 }
 
-.magnetomech-ball {
+.magnetomech {
 	position: absolute;
 	top: 0;
-	left: 0px;
+	left: 77px;
+}
 
+#magnetomech-ball {
 	-webkit-animation: magnetomech-oscillate 0.2s ease-in-out infinite alternate;
 	-moz-animation: magnetomech-oscillate 0.2s ease-in-out infinite alternate;
 	-ms-animation: magnetomech-oscillate 0.2s ease-in-out infinite alternate;
