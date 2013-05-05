@@ -4,10 +4,6 @@
 @slide-padding-horizontal: 60px;
 
 body {
-  background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-  background: -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-  background: -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-  background: -ms-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
   background: radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
   min-height: 740px;
   font-family: "Open Sans", sans-serif;
@@ -69,10 +65,10 @@ b {
 
 // !important used so that they remain invisible on overview step
 .visible-present {
-  opacity: 0 !important;
+  display: none;
 
   &.present {
-    opacity: 1 !important;
+    display: inherit;
   }
 }
 
@@ -96,9 +92,26 @@ b {
 .exp-image {
   text-align: center;
 
-  img {
+  img, video {
     height: 75%;
   }
+}
+
+.magnetomech-setup {}
+
+@keyframes magnetomech-oscillate {
+  from {
+    transform:translate(-40px, 0);
+  } to {
+    transform:translate(0px, 0);
+  }
+}
+
+.magnetomech-ball {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  animation: magnetomech-oscillate 0.2s ease-in-out infinite alternate;
 }
 
 .impress-on-intro-experiments .exp-image { opacity: 1; }
