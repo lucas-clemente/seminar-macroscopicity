@@ -1,6 +1,6 @@
 # Wed Seminar about Macroscopicity Measures
 
-MPQ Theory group, Lucas Clemente, 2013-05-08
+MPQ Theory group, Lucas Clemente, 2013-05-15
 
 See it in action [here](http://lclemente.org/seminar-macroscopicity/), or have a look at the sources.
 
