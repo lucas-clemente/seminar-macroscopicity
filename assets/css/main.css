@@ -1,233 +1,209 @@
 body {
-	background: -webkit-radial-gradient(#f0f0f0, #bebebe);
-	background: -moz-radial-gradient(#f0f0f0, #bebebe);
-	background: -o-radial-gradient(#f0f0f0, #bebebe);
-	background: -ms-radial-gradient(#f0f0f0, #bebebe);
-	background: radial-gradient(#f0f0f0, #bebebe);
-	min-height: 740px;
-	font-family: "Open Sans", sans-serif;
-	font-size: 32px;
+  background-color: #bebebe;
+  background-image: -webkit-radial-gradient(circle, #f0f0f0, #bebebe);
+  background-image: -moz-radial-gradient(circle, #f0f0f0, #bebebe);
+  background-image: -o-radial-gradient(circle, #f0f0f0, #bebebe);
+  background-image: radial-gradient(circle, #f0f0f0, #bebebe);
+  background-repeat: no-repeat;
+  min-height: 740px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 32px;
 }
-
-h1,h2 {
-	font-weight: 300;
+h1,
+h2 {
+  font-weight: 300;
 }
-
 a {
-	color: #005580;
-	text-decoration: inherit;
+  color: #005580;
+  text-decoration: inherit;
 }
-
 a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
-
 b {
-	font-weight: 600;
+  font-weight: 600;
 }
-
 .centered {
-	text-align: center;
+  text-align: center;
 }
-
 .centered-vertical {
-	margin-top: 230px;
+  margin-top: 230px;
 }
-
 .pull-right {
-	float: right;
+  float: right;
 }
-
 .step {
-	width: 900px;
-	height: 700px;
-	padding: 40px;
-	line-height: 1.5;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-	filter: alpha(opacity=30);
-	opacity: 0.3;
-
-	-webkit-transition: opacity 1s;
-	-moz-transition: opacity 1s;
-	-o-transition: opacity 1s;
-	-ms-transition: opacity 1s;
-	transition: opacity 1s;
-
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	box-sizing: border-box;
+  width: 900px;
+  height: 700px;
+  padding: 40px;
+  line-height: 1.5;
+  opacity: 0.3;
+  transition: opacity 1s;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 .step.active {
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-	filter: alpha(opacity=100);
-	opacity: 1;
+  opacity: 1;
 }
-
 .slide {
-	padding: 40px 60px;
-	background-color: white;
-	border: 1px solid rgba(0, 0, 0, 0.3);
-	border-radius: 10px;
-	color: #666666;
+  padding: 40px 60px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  color: #666666;
 }
-
 .invisible {
-	display: none;
+  display: none;
 }
-
 .visible-present {
-	display: none;
+  display: none;
 }
-
 .visible-present.present {
-	display: inherit;
+  display: inherit;
 }
-
 .highlight {
-	background-color: rgba(200, 200, 200, 0.8);
-	border-radius: 10px;
-	padding: 10px;
+  background-color: rgba(200, 200, 200, 0.8);
+  border-radius: 10px;
+  padding: 10px;
 }
-
 #intro-experiments img {
-	width: 200px;
+  width: 200px;
 }
-
 .exp-image {
-	text-align: center;
+  text-align: center;
 }
-
-.exp-image img,.exp-image video,.exp-image div.placeholder {
-	height: 420px;
+.exp-image img,
+.exp-image video,
+.exp-image div.placeholder {
+  height: 420px;
 }
-
 .buckyball {
-	position: absolute;
-	top: 0;
-	left: 240px;
-
-	-webkit-transition-duration: 1s;
-	-moz-transition-duration: 1s;
-	-o-transition-duration: 1s;
-	-ms-transition-duration: 1s;
-	transition-duration: 1s;
+  position: absolute;
+  top: 0;
+  left: 240px;
+  transition-duration: 1s;
 }
-
 .present .buckyball {
-	-webkit-filter: blur(10px);
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
 }
-
 .present #buckyball-left {
-	-webkit-transform: translate(-200px, 0);
-	-moz-transform: translate(-200px, 0);
-	-o-transform: translate(-200px, 0);
-	-ms-transform: translate(-200px, 0);
-	transform: translate(-200px, 0);
+  -webkit-transform: translate(-200px, 0);
+  -moz-transform: translate(-200px, 0);
+  -o-transform: translate(-200px, 0);
+  -ms-transform: translate(-200px, 0);
+  transform: translate(-200px, 0);
 }
-
 .present #buckyball-right {
-	-webkit-transform: translate(200px, 0);
-	-moz-transform: translate(200px, 0);
-	-o-transform: translate(200px, 0);
-	-ms-transform: translate(200px, 0);
-	transform: translate(200px, 0);
+  -webkit-transform: translate(200px, 0);
+  -moz-transform: translate(200px, 0);
+  -o-transform: translate(200px, 0);
+  -ms-transform: translate(200px, 0);
+  transform: translate(200px, 0);
 }
-
 .magnetomech-setup {
-	position: absolute;
+  position: absolute;
 }
-
-@keyframes "magnetomech-oscillate" {
- from {
+@-webkit-keyframes magnetomech-oscillate {
+  from {
     -webkit-transform: translate(-40px, 0);
-   	-moz-transform: translate(-40px, 0);
-   	-o-transform: translate(-40px, 0);
-   	-ms-transform: translate(-40px, 0);
-   	transform: translate(-40px, 0);
- }
- to {
+    -moz-transform: translate(-40px, 0);
+    -o-transform: translate(-40px, 0);
+    -ms-transform: translate(-40px, 0);
+    transform: translate(-40px, 0);
+  }
+  to {
     -webkit-transform: translate(0px, 0);
-   	-moz-transform: translate(0px, 0);
-   	-o-transform: translate(0px, 0);
-   	-ms-transform: translate(0px, 0);
-   	transform: translate(0px, 0);
- }
-
+    -moz-transform: translate(0px, 0);
+    -o-transform: translate(0px, 0);
+    -ms-transform: translate(0px, 0);
+    transform: translate(0px, 0);
+  }
 }
-
 @-moz-keyframes magnetomech-oscillate {
- from {
-   -moz-transform: translate(-40px, 0);
-   transform: translate(-40px, 0);
- }
- to {
-   -moz-transform: translate(0px, 0);
-   transform: translate(0px, 0);
- }
-
+  from {
+    -webkit-transform: translate(-40px, 0);
+    -moz-transform: translate(-40px, 0);
+    -o-transform: translate(-40px, 0);
+    -ms-transform: translate(-40px, 0);
+    transform: translate(-40px, 0);
+  }
+  to {
+    -webkit-transform: translate(0px, 0);
+    -moz-transform: translate(0px, 0);
+    -o-transform: translate(0px, 0);
+    -ms-transform: translate(0px, 0);
+    transform: translate(0px, 0);
+  }
 }
-
-@-webkit-keyframes "magnetomech-oscillate" {
- from {
-   -webkit-transform: translate(-40px, 0);
-   transform: translate(-40px, 0);
- }
- to {
-   -webkit-transform: translate(0px, 0);
-   transform: translate(0px, 0);
- }
-
+@-o-keyframes magnetomech-oscillate {
+  from {
+    -webkit-transform: translate(-40px, 0);
+    -moz-transform: translate(-40px, 0);
+    -o-transform: translate(-40px, 0);
+    -ms-transform: translate(-40px, 0);
+    transform: translate(-40px, 0);
+  }
+  to {
+    -webkit-transform: translate(0px, 0);
+    -moz-transform: translate(0px, 0);
+    -o-transform: translate(0px, 0);
+    -ms-transform: translate(0px, 0);
+    transform: translate(0px, 0);
+  }
 }
-
-@-ms-keyframes "magnetomech-oscillate" {
- from {
-   -ms-transform: translate(-40px, 0);
-   transform: translate(-40px, 0);
- }
- to {
-   -ms-transform: translate(0px, 0);
-   transform: translate(0px, 0);
- }
-
+@-ms-keyframes magnetomech-oscillate {
+  from {
+    -webkit-transform: translate(-40px, 0);
+    -moz-transform: translate(-40px, 0);
+    -o-transform: translate(-40px, 0);
+    -ms-transform: translate(-40px, 0);
+    transform: translate(-40px, 0);
+  }
+  to {
+    -webkit-transform: translate(0px, 0);
+    -moz-transform: translate(0px, 0);
+    -o-transform: translate(0px, 0);
+    -ms-transform: translate(0px, 0);
+    transform: translate(0px, 0);
+  }
 }
-
-@-o-keyframes "magnetomech-oscillate" {
- from {
-   -o-transform: translate(-40px, 0);
-   transform: translate(-40px, 0);
- }
- to {
-   -o-transform: translate(0px, 0);
-   transform: translate(0px, 0);
- }
-
+@keyframes magnetomech-oscillate {
+  from {
+    -webkit-transform: translate(-40px, 0);
+    -moz-transform: translate(-40px, 0);
+    -o-transform: translate(-40px, 0);
+    -ms-transform: translate(-40px, 0);
+    transform: translate(-40px, 0);
+  }
+  to {
+    -webkit-transform: translate(0px, 0);
+    -moz-transform: translate(0px, 0);
+    -o-transform: translate(0px, 0);
+    -ms-transform: translate(0px, 0);
+    transform: translate(0px, 0);
+  }
 }
-
 .magnetomech {
-	position: absolute;
-	top: 0;
-	left: 77px;
+  position: absolute;
+  top: 0;
+  left: 77px;
 }
-
 #magnetomech-ball {
-	-webkit-animation: magnetomech-oscillate 0.2s ease-in-out infinite alternate;
-	-moz-animation: magnetomech-oscillate 0.2s ease-in-out infinite alternate;
-	-ms-animation: magnetomech-oscillate 0.2s ease-in-out infinite alternate;
-	-o-animation: magnetomech-oscillate 0.2s ease-in-out infinite alternate;
-	animation: magnetomech-oscillate 0.2s ease-in-out infinite alternate;
+  -webkit-animation: magnetomech-oscillate 0.2s ease-in-out infinite alternate;
+  -moz-animation: magnetomech-oscillate 0.2s ease-in-out infinite alternate;
+  -ms-animation: magnetomech-oscillate 0.2s ease-in-out infinite alternate;
+  -o-animation: magnetomech-oscillate 0.2s ease-in-out infinite alternate;
+  animation: magnetomech-oscillate 0.2s ease-in-out infinite alternate;
 }
-
 .impress-on-intro-experiments .exp-image {
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-	filter: alpha(opacity=100);
-	opacity: 1;
+  opacity: 1;
 }
-
 .impress-on-overview .step {
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-	filter: alpha(opacity=100);
-	opacity: 1;
-	cursor: pointer;
+  opacity: 1;
+  cursor: pointer;
 }

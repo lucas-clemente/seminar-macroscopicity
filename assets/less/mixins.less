@@ -1,0 +1,32 @@
+.radial-gradient(@innerColor: #555, @outerColor: #333) {
+  background-color: @outerColor;
+  background-image: -webkit-radial-gradient(circle, @innerColor, @outerColor);
+  background-image: -moz-radial-gradient(circle, @innerColor, @outerColor);
+  background-image: -o-radial-gradient(circle, @innerColor, @outerColor);
+  background-image: radial-gradient(circle, @innerColor, @outerColor);
+  background-repeat: no-repeat;
+}
+
+.transform(@translation) {
+  -webkit-transform: @translation;
+  -moz-transform: @translation;
+  -o-transform: @translation;
+  -ms-transform: @translation;
+  transform: @translation;
+}
+
+.animation(@animation) {
+  -webkit-animation: @animation;
+  -moz-animation: @animation;
+  -ms-animation: @animation;
+  -o-animation: @animation;
+  animation: @animation;
+}
+
+.filter(@filter) {
+  -webkit-filter: @filter;
+  -moz-filter: @filter;
+  -o-filter: @filter;
+  -ms-filter: @filter;
+  filter: @filter;
+}

@@ -1,10 +1,12 @@
+@import 'mixins';
+
 @slide-width: 900px;
 @slide-height: 700px;
 @slide-padding-vertical: 40px;
 @slide-padding-horizontal: 60px;
 
 body {
-  background: radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+  .radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
   min-height: 740px;
   font-family: "Open Sans", sans-serif;
   font-size: 32px;
@@ -46,6 +48,8 @@ b {
   line-height: 1.5;
   opacity: 0.3;
   transition: opacity 1s;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 
   &.active {
@@ -108,15 +112,15 @@ b {
 
 .present {
   .buckyball {
-    -webkit-filter: blur(10px);
+    .filter(blur(10px));
   }
 
   #buckyball-left {
-    transform: translate(-200px, 0);
+    .transform(translate(-200px, 0));
   }
 
   #buckyball-right {
-    transform: translate(200px, 0);
+    .transform(translate(200px, 0));
   }
 }
 
@@ -124,13 +128,19 @@ b {
   position: absolute;
 }
 
-@keyframes magnetomech-oscillate {
+.magnetomech-oscillate() {
   from {
-    transform:translate(-40px, 0);
+    .transform(translate(-40px, 0));
   } to {
-    transform:translate(0px, 0);
+    .transform(translate(0px, 0));
   }
 }
+
+@-webkit-keyframes magnetomech-oscillate {.magnetomech-oscillate;}
+@-moz-keyframes magnetomech-oscillate {.magnetomech-oscillate;}
+@-o-keyframes magnetomech-oscillate {.magnetomech-oscillate;}
+@-ms-keyframes magnetomech-oscillate {.magnetomech-oscillate;}
+@keyframes magnetomech-oscillate {.magnetomech-oscillate;}
 
 .magnetomech {
   position: absolute;
@@ -139,7 +149,7 @@ b {
 }
 
 #magnetomech-ball {
-  animation: magnetomech-oscillate 0.2s ease-in-out infinite alternate;
+  .animation(magnetomech-oscillate 0.2s ease-in-out infinite alternate);
 }
 
 .impress-on-intro-experiments .exp-image { opacity: 1; }
