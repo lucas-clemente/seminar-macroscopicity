@@ -9,6 +9,10 @@
   <base target="_blank">
 </head>
 <body>
+  <div class="invisible">
+    $\newcommand{\ket}[1]{\left|#1\right\rangle}$
+  </div>
+
   <div id="impress">
     <div class="step slide centered" data-x="-1000">
       <h1>How to measure a cat<br>&mdash; what is macroscopic?</h1>
@@ -63,16 +67,72 @@
       <h1 class="centered-vertical highlight">Are they <b>macroscopic</b>?</h1>
     </div>
 
-    <div class="step" data-scale="2" data-x="4000" data-rotate-y="-90">
+    <div class="step centered" id="measures-overview" data-scale="2" data-x="4000" data-rotate-y="-90">
       <h1>Macroscopicity Measures</h1>
+    </div>
 
+    <div class="step slide" data-scale="0.5" data-x="4000" data-y="-100" data-z="-500" data-rotate-y="-90" data-ref="leggett">
+      <h1>Disconnectivity</h1>
+      <p><b>Motivation:</b> Look for violation of QM</p>
+      <ul>
+        <li>Small length scales (10<sup>-35</sup> m)</li>
+        <li>Short time &amp; long length scales (Bell experiments)</li>
+        <li>"Quantum" setups connected to our world</li>
+      </ul>
+    </div>
+
+    <div class="step slide" data-scale="0.5" data-x="5000" data-y="-100" data-z="-500" data-rotate-y="-90" data-ref="leggett">
+      <h1>Disconnectivity</h1>
+      <p><b>Measures:</b></p>
+      <ul>
+        <li><b>Extensive difference $\Lambda$</b>: difference of states vs reference value (e.g. $\Delta \Phi / \Phi_0$)</li>
+        <li><b>Disconnectivity D:</b> degree of entanglement, possibly reduced entropy</li>
+      </ul>
+    </div>
+
+    <div class="step slide" data-scale="0.5" data-x="6000" data-y="-100" data-z="-500" data-rotate-y="-90" data-ref="leggett">
+      <h1>Disconnectivity</h1>
+      <p><b>Examples:</b></p>
+      <ul>
+        <li>GHZ State of N particles: D = N</li>
+        <li>Molecule interferometry: D &#8776; 10<sup>6</sup></li>
+        <li>Atomic ensembles: D &#8776; 10<sup>7</sup></li>
+        <li>SQUIDs: D &#8776; 10<sup>10</sup></li>
+      </ul>
+    </div>
+
+    <div class="step slide" data-scale="0.5" data-x="4000" data-y="-100" data-z="500" data-rotate-y="-90">
+      <h1>Local transformations</h1>
+    </div>
+
+    <div class="step slide" data-scale="0.5" data-x="4000" data-y="400" data-z="-500" data-rotate-y="-90">
+      <h1>Model 3</h1>
+    </div>
+
+    <div class="step slide" data-scale="0.5" data-x="4000" data-y="400" data-z="500" data-rotate-y="-90">
+      <h1>Model 4</h1>
     </div>
 
     <div id="overview" class="step invisible" data-scale="7"></div>
   </div>
+
+  <div class="invisible">
+    <p data-reflabel="leggett">
+      Leggett,
+      <a href="http://ptps.oxfordjournals.org/content/69/Supplement_1/80.short">1980</a> &amp; 
+      <a href="http://iopscience.iop.org/0953-8984/14/15/201/">2002</a>
+    </p>
+  </div>
   
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
   <script src="assets/js/impress.js"></script>
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+      "HTML-CSS": {scale: 90}
+    });
+  </script>
   <script src="assets/js/main.js"></script>
   <script>impress().init();</script>
 </body>

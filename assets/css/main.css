@@ -23,6 +23,13 @@ a:hover {
 b {
   font-weight: 600;
 }
+li {
+  margin-bottom: 20px;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
 .centered {
   text-align: center;
 }
@@ -67,6 +74,13 @@ b {
   background-color: rgba(200, 200, 200, 0.8);
   border-radius: 10px;
   padding: 10px;
+}
+.reference {
+  position: absolute;
+  bottom: 40px;
+  right: 60px;
+  margin: 0;
+  font-size: smaller;
 }
 #intro-experiments img {
   width: 200px;
@@ -200,6 +214,9 @@ b {
   -ms-animation: magnetomech-oscillate 0.2s ease-in-out infinite alternate;
   -o-animation: magnetomech-oscillate 0.2s ease-in-out infinite alternate;
   animation: magnetomech-oscillate 0.2s ease-in-out infinite alternate;
+}
+.impress-on-measures-overview .step {
+  opacity: 1;
 }
 .impress-on-intro-experiments .exp-image {
   opacity: 1;

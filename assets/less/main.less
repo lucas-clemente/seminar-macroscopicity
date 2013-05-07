@@ -29,6 +29,15 @@ b {
   font-weight: 600;
 }
 
+li {
+  margin-bottom: 20px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 24px
+}
+
 .centered {
   text-align: center;
 }
@@ -80,6 +89,13 @@ b {
   padding: 10px;
 }
 
+.reference {
+  position: absolute;
+  bottom: @slide-padding-vertical;
+  right: @slide-padding-horizontal;
+  margin: 0;
+  font-size: smaller;
+}
 
 // -----------------------------------------------------------------
 // --- Slide specific styles ---------------------------------------
@@ -149,6 +165,8 @@ b {
 #magnetomech-ball {
   .animation(magnetomech-oscillate 0.2s ease-in-out infinite alternate);
 }
+
+.impress-on-measures-overview .step { opacity: 1; }
 
 .impress-on-intro-experiments .exp-image { opacity: 1; }
 
