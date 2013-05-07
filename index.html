@@ -11,6 +11,7 @@
 <body>
   <div class="invisible">
     $\newcommand{\ket}[1]{\left|#1\right\rangle}$
+    $\newcommand{\braket}[2]{\left \langle #1 \right|\left. #2\right\rangle}$
   </div>
 
   <div id="impress">
@@ -101,8 +102,13 @@
       </ul>
     </div>
 
-    <div class="step slide" data-scale="0.5" data-x="4000" data-y="-100" data-z="500" data-rotate-y="-90">
-      <h1>Local transformations</h1>
+    <div class="step slide" data-scale="0.5" data-x="4000" data-y="-100" data-z="500" data-rotate-y="-90" data-ref="dsc">
+      <h1>DSC Measure</h1>
+      <p><b>Idea:</b> Compare realistic (e.g. BEC) &harr; GHZ states</p>
+      $$\ket{\psi} = \frac{1}{\sqrt{K}} \left( \ket{0}^{\otimes N} + \ket{\epsilon}^{\otimes N} \right)$$
+      <p>where $\left| \braket{0}{\epsilon} \right|^2 = 1 - \epsilon^2$.</p>
+      <p>Through decoherence rate / max distillation:</p>
+      <p class="centered">Effective size $N_{eff} = N \epsilon^2$</p>
     </div>
 
     <div class="step slide" data-scale="0.5" data-x="4000" data-y="400" data-z="-500" data-rotate-y="-90">
@@ -122,6 +128,9 @@
       <a href="http://ptps.oxfordjournals.org/content/69/Supplement_1/80.short">1980</a> &amp; 
       <a href="http://iopscience.iop.org/0953-8984/14/15/201/">2002</a>
     </p>
+    <p data-reflabel="dsc">
+      <a href="http://prl.aps.org/abstract/PRL/v89/i21/e210402">D&uuml;r, Simon, Cirac 2002</a>
+    </p>
   </div>
   
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
@@ -130,7 +139,7 @@
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
       tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
-      "HTML-CSS": {scale: 90}
+      "HTML-CSS": {scale: 80}
     });
   </script>
   <script src="assets/js/main.js"></script>
