@@ -11,5 +11,4 @@ $('[data-ref]').each ->
   refname = $this.data('ref')
   ref = refs[refname]
   console.warn('unresolved reference ' + refname) unless ref
-  console.log('reference ' + refname)
   $this.prepend(ref.clone())

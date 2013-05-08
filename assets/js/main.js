@@ -19,7 +19,6 @@
     if (!ref) {
       console.warn('unresolved reference ' + refname);
     }
-    console.log('reference ' + refname);
     return $this.prepend(ref.clone());
   });
 
