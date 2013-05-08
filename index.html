@@ -12,6 +12,7 @@
   <div class="invisible">
     $\newcommand{\ket}[1]{\left|#1\right\rangle}$
     $\newcommand{\braket}[2]{\left \langle #1 \right|\left. #2\right\rangle}$
+    $\newcommand{\dd}{\mathrm d}$
   </div>
 
   <div id="impress">
@@ -101,12 +102,39 @@
       <p><b>Idea:</b> Compare realistic (e.g. BEC) &harr; GHZ states</p>
       $$\ket{\psi} = \frac{1}{\sqrt{K}} \left( \ket{0}^{\otimes N} + \ket{\epsilon}^{\otimes N} \right)$$
       <p>where $\left| \braket{0}{\epsilon} \right|^2 = 1 - \epsilon^2$.</p>
-      <p>Through decoherence rate / max distillation:</p>
-      <p class="centered">Effective size $N_{eff} = N \epsilon^2$</p>
+      <div class="substep">
+        <p>Through decoherence rate / max distillation:</p>
+        <p>$$N_{eff} = N \epsilon^2$$</p>        
+      </div>
     </div>
 
-    <div class="step slide" data-scale="0.5" data-x="4000" data-y="400" data-z="-500" data-rotate-y="-90">
-      <h1>Model 3</h1>
+    <div class="step slide" data-scale="0.5" data-x="4000" data-y="400" data-z="-500" data-rotate-y="-90" data-ref="bm">
+      <h1>BM Measure</h1>
+      <p><b>Problems</b> with Disconnectivity / DSC:</p>
+      <ul>
+        <li>Dependence on <b>preferred</b> set of basis states</li>
+        <li>Particle number &ne; Macroscopicity<span class="remark">(e.g. 10 photon NOON state is visible = macroscopic)</span></li>
+      </ul>
+      <p class="substep"><b>Solution:</b> Use preferred observable instead of basis</p>
+    </div>
+
+    <div class="step slide" data-scale="0.5" data-x="5000" data-y="400" data-z="-500" data-rotate-y="-90" data-ref="bm">
+      <h1>BM Measure</h1>
+      <p>Superposition in observable A:</p>
+      $$\ket{\psi} = \int \braket{a}{\psi}\ket{a} \dd a\\ \left|\braket{a}{\psi}\right|^2 = f(a - a_1) + f(a - a_2)$$
+      <p class="substep">Orthogonal state reached after time $T \propto (a_2 - a_1)^{-1}$.</p>
+      <p class="substep">$$M = \frac{T_{\text sing}}{T_{\text sup}} = \frac{\left|a_1 - a_2\right|}{\Delta a}$$</p>
+    </div>
+
+    <div class="step slide" data-scale="0.5" data-x="6000" data-y="400" data-z="-500" data-rotate-y="-90" data-ref="bm">
+      <h1>BM Measure</h1>
+      <p>Examples:</p>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </div>
 
     <div class="step slide" data-scale="0.5" data-x="4000" data-y="400" data-z="500" data-rotate-y="-90">
@@ -124,6 +152,9 @@
     </p>
     <p data-reflabel="dsc">
       <a href="http://prl.aps.org/abstract/PRL/v89/i21/e210402">D&uuml;r, Simon, Cirac 2002</a>
+    </p>
+    <p data-reflabel="bm">
+      <a href="http://prl.aps.org/abstract/PRL/v89/i21/e210402">Bj&ouml;rk, Mana 2004</a>
     </p>
   </div>
   
