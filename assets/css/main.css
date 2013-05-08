@@ -102,9 +102,6 @@ p {
 .substep.active {
   opacity: 1;
 }
-.substep.present {
-  color: #6487c3;
-}
 #title p {
   margin-top: 70px;
 }
