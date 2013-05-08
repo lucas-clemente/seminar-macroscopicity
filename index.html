@@ -9,6 +9,11 @@
   <base target="_blank">
 </head>
 <body>
+  <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #fff; z-index: 1;" id="wip">
+    Work in progress, check back later or use your dev tools ;)
+  </div>
+  <script>if (document.URL.indexOf("localhost")) (elem = document.getElementById("wip")).parentNode.removeChild(elem);</script>
+
   <div class="invisible">
     $\newcommand{\ket}[1]{\left|#1\right\rangle}$
     $\newcommand{\braket}[2]{\left \langle #1 \right|\left. #2\right\rangle}$
