@@ -56,7 +56,7 @@ p {
   padding: 40px;
   line-height: 1.5;
   opacity: 0.3;
-  transition: opacity 1s;
+  .transition(opacity 1s);
   .box-sizing(border-box);
 
   &.active {
@@ -99,6 +99,7 @@ p {
 
 .remark {
   display: block;
+  margin-top: 10px;
   font-size: 75%;
 }
 
@@ -106,7 +107,7 @@ p {
 
 .substep {
   opacity: 0;
-  transition-duration: 1s;
+  .transition(all 1s);
 }
 
 .substep.active {
@@ -121,6 +122,10 @@ p {
 // -----------------------------------------------------------------
 // --- Slide specific styles ---------------------------------------
 // -----------------------------------------------------------------
+
+#title p {
+  margin-top: 70px;
+}
 
 #intro-experiments {
   img {
@@ -142,7 +147,7 @@ p {
   position: absolute;
   top: 0;
   left: @slide-width / 2 - @exp-img-height / 2;
-  transition-duration: 1s;
+  .transition(all 1s);
 }
 
 .present {

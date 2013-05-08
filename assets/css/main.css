@@ -45,6 +45,10 @@ p {
   padding: 40px;
   line-height: 1.5;
   opacity: 0.3;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  -ms-transition: opacity 1s;
   transition: opacity 1s;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -84,17 +88,25 @@ p {
 }
 .remark {
   display: block;
+  margin-top: 10px;
   font-size: 75%;
 }
 .substep {
   opacity: 0;
-  transition-duration: 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -ms-transition: all 1s;
+  transition: all 1s;
 }
 .substep.active {
   opacity: 1;
 }
 .substep.present {
   color: #6487c3;
+}
+#title p {
+  margin-top: 70px;
 }
 #intro-experiments img {
   width: 200px;
@@ -111,7 +123,11 @@ p {
   position: absolute;
   top: 0;
   left: 240px;
-  transition-duration: 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -ms-transition: all 1s;
+  transition: all 1s;
 }
 .present .buckyball {
   -webkit-filter: blur(10px);

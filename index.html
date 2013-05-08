@@ -16,8 +16,8 @@
   </div>
 
   <div id="impress">
-    <div class="step slide centered" data-x="-1000">
-      <h1>How to measure a cat<br>&mdash; what is macroscopic?</h1>
+    <div class="step slide centered" id="title" data-x="-1000">
+      <h1>How fat is the cat &hellip;<span class="remark">&hellip; is it <em>macroscopic</em>?</span></h1>
       <p>15<sup>th</sup> May 2013</p>
       <p>
         <a href="http://www.mpq.mpg.de/Theorygroup/CIRAC/wiki/index.php/Theory_Division.html" target="blank">MPQ Theory Seminar</a>,
@@ -113,7 +113,7 @@
       <p><b>Problems</b> with Disconnectivity / DSC:</p>
       <ul>
         <li>Dependence on <b>preferred</b> set of basis states</li>
-        <li>Particle number &ne; Macroscopicity<span class="remark">(e.g. 10 photon NOON state is visible = macroscopic)</span></li>
+        <li>Particle number &ne; Macroscopicity<span class="remark">e.g. 10 photon NOON state is visible = macroscopic</span></li>
       </ul>
       <p class="substep"><b>Solution:</b> Use preferred observable instead of basis</p>
     </div>
@@ -133,15 +133,17 @@
         <li>Single Qubit: M = 1</li>
         <li>C<sub>60</sub>: M &asymp; 5</li>
         <li>SQUIDs: M &asymp; 33</li>
-        <li>Optomechanical $\ket{0} + \ket{1}$: M = 1</li>
+        <li>Optomechanical $\ket{0} + \ket{1}$: M = 1 (?)</li>
       </ul>
     </div>
 
-    <div class="step slide" data-scale="0.5" data-x="4000" data-y="400" data-z="500" data-rotate-y="-90">
-      <h1>Model 4</h1>
+    <div class="step slide" data-scale="0.5" data-x="4000" data-y="400" data-z="500" data-rotate-y="-90" data-ref="kwdc">
+      <h1>KWDC Measure</h1>
+      <p>How many fundamental subsystems do we have to measure to collapse $\ket{A} + \ket{B}$ with precision $\delta$?</p>
+      $$C_\delta := \frac{N}{n_\text{min}}$$
     </div>
 
-    <div id="overview" class="step invisible" data-scale="7"></div>
+    <div id="overview" class="step invisible" data-scale="5" data-x="1500"</div>
   </div>
 
   <div class="invisible">
@@ -155,6 +157,9 @@
     </p>
     <p data-reflabel="bm">
       <a href="http://prl.aps.org/abstract/PRL/v89/i21/e210402">Bj&ouml;rk, Mana 2004</a>
+    </p>
+    <p data-reflabel="kwdc">
+      <a href="http://pra.aps.org/abstract/PRA/v75/i4/e042106">Korsbakken, Whaley, Dubois, Cirac 2007</a>
     </p>
   </div>
   
