@@ -13,3 +13,9 @@ $('[data-ref]').each ->
   ref = refs[refname]
   console.warn('unresolved reference ' + refname) unless ref
   $this.prepend(ref.clone())
+
+# >> before every heading, except title slide
+
+$('.slide>h1').each ->
+  return if this.parentElement.id == "title"
+  $(this).prepend('<i class="icon-double-angle-right"></i> ')

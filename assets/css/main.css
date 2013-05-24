@@ -92,7 +92,7 @@ p {
   font-size: 75%;
 }
 .substep {
-  opacity: 0;
+  opacity: 0.3;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   -o-transition: all 1s;

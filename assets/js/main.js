@@ -25,4 +25,11 @@
     return $this.prepend(ref.clone());
   });
 
+  $('.slide>h1').each(function() {
+    if (this.parentElement.id === "title") {
+      return;
+    }
+    return $(this).prepend('<i class="icon-double-angle-right"></i> ');
+  });
+
 }).call(this);
