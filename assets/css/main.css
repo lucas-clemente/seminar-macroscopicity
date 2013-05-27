@@ -43,6 +43,9 @@ p {
   display: table-cell;
   vertical-align: middle;
 }
+.centered-vertical .centered {
+  margin: 0 auto;
+}
 .pull-right {
   float: right;
 }
@@ -81,6 +84,9 @@ p {
 }
 .visible-present.present {
   display: inherit;
+}
+.visible-present.present.centered-vertical {
+  display: table;
 }
 .highlight {
   background-color: rgba(200, 200, 200, 0.8);
@@ -256,6 +262,9 @@ ul.unstyled li {
   animation: magnetomech-oscillate 0.2s ease-in-out infinite alternate;
 }
 .impress-on-macro-overview .step {
+  opacity: 1;
+}
+.impress-on-macro-overview2 .step {
   opacity: 1;
 }
 .impress-on-intro-experiments .exp-image {
