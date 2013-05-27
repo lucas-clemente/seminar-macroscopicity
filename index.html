@@ -17,7 +17,9 @@
 
   <div class="invisible">
     $\newcommand{\ket}[1]{\left|#1\right\rangle}$
+    $\newcommand{\bra}[1]{\left\langle#1\right|}$
     $\newcommand{\braket}[2]{\left \langle #1 \right|\left. #2\right\rangle}$
+    $\newcommand{\avg}[1]{\left \langle #1 \right \rangle}$
     $\newcommand{\dd}{\mathrm d}$
   </div>
 
@@ -79,11 +81,44 @@
       <h1 class="centered-vertical highlight">Are they <b>macroscopic</b>?</h1>
     </div>
 
-    <div class="step centered" id="measures-overview" data-scale="2" data-x="4000" data-rotate-y="-90">
-      <h1>Macroscopicity Measures</h1>
+    <div class="step centered centered-vertical " id="macro-overview" data-scale="2" data-x="4000" data-rotate-y="-90" data-ref="fd">
+      <h1>Macroscopicity</h1>
     </div>
 
-    <div class="step slide" data-scale="0.5" data-x="4000" data-y="-100" data-z="-500" data-rotate-y="-90" data-ref="leggett">
+    <div class="step centered-vertical big" data-scale="0.4" data-x="4000" data-y="300" data-z="300" data-rotate-y="-90" data-rotate-z="90">
+      <p>
+        Behavior is neither<br>
+        <b>classical</b>, nor an<br>
+        <b>accumulated quantum effect</b><span class="remark">Think Debye model for specific heat</span>
+      </p>
+    </div>
+
+    <div class="step centered-vertical big" data-scale="0.4" data-x="4000" data-y="300" data-z="100" data-rotate-y="-90" data-rotate-z="90">
+      <div>
+        <b>Idea:</b> Use <em>effective</em> number of particles
+        <span class="remark">The smallest system size so that quantum mechanics explains the behavior. Think $N_\text{eff} = 2$ for Cooper pairs.</span>
+      </div>
+    </div>
+
+    <div class="step centered-vertical big" data-scale="0.4" data-x="4000" data-y="300" data-z="-100" data-rotate-y="-90" data-rotate-z="90">
+      <div>
+        Call a system <b>macroscopic</b> if effective size is linear $N_\text{eff} = \mathcal O(N)$
+        <span class="remark">
+          i.e. all particles need to be described quantum mechanically
+        </span>
+      </div>
+    </div>
+
+    <div class="step centered-vertical big" data-scale="0.4" data-x="4000" data-y="300" data-z="-300" data-rotate-y="-90" data-rotate-z="90">
+      <div>
+        <p><b>Examples:</b></p>
+        <p>GHZ state: $N_\text{eff} = N$, <em>macroscopic</em></p>
+        <p>Cooper pair: $N_\text{eff} = 2$, <em>microscopic</em></p>
+      </div>
+    </div>
+
+
+    <!-- <div class="step slide" data-scale="0.4" data-x="4000" data-y="-100" data-z="-500" data-rotate-y="-90" data-ref="leggett">
       <h1>Disconnectivity</h1>
       <p><b>Measures:</b></p>
       <ul>
@@ -92,7 +127,7 @@
       </ul>
     </div>
 
-    <div class="step slide" data-scale="0.5" data-x="5000" data-y="-100" data-z="-500" data-rotate-y="-90" data-ref="leggett">
+    <div class="step slide" data-scale="0.4" data-x="5000" data-y="-100" data-z="-500" data-rotate-y="-90" data-ref="leggett">
       <h1>Disconnectivity</h1>
       <p><b>Examples:</b></p>
       <ul>
@@ -103,7 +138,7 @@
       </ul>
     </div>
 
-    <div class="step slide" data-scale="0.5" data-x="4000" data-y="-100" data-z="500" data-rotate-y="-90" data-ref="dsc">
+    <div class="step slide" data-scale="0.4" data-x="4000" data-y="-100" data-z="0" data-rotate-y="-90" data-ref="dsc">
       <h1>DSC Measure</h1>
       <p><b>Idea:</b> Compare realistic (e.g. BEC) &harr; GHZ states</p>
       $$\ket{\psi} = \frac{1}{\sqrt{K}} \left( \ket{0}^{\otimes N} + \ket{\epsilon}^{\otimes N} \right)$$
@@ -114,7 +149,7 @@
       </div>
     </div>
 
-    <div class="step slide" data-scale="0.5" data-x="4000" data-y="400" data-z="-500" data-rotate-y="-90" data-ref="bm">
+    <div class="step slide" data-scale="0.4" data-x="4000" data-y="-100" data-z="500" data-rotate-y="-90" data-ref="bm">
       <h1>BM Measure</h1>
       <p><b>Problems</b> with Disconnectivity / DSC:</p>
       <ul>
@@ -124,7 +159,7 @@
       <p class="substep"><b>Solution:</b> Use preferred observable instead of basis</p>
     </div>
 
-    <div class="step slide" data-scale="0.5" data-x="5000" data-y="400" data-z="-500" data-rotate-y="-90" data-ref="bm">
+    <div class="step slide" data-scale="0.4" data-x="5000" data-y="-100" data-z="500" data-rotate-y="-90" data-ref="bm">
       <h1>BM Measure</h1>
       <p>Superposition in observable A:</p>
       $$\ket{\psi} = \int \braket{a}{\psi}\ket{a} \dd a\\ \left|\braket{a}{\psi}\right|^2 = f(a - a_1) + f(a - a_2)$$
@@ -132,7 +167,7 @@
       <p class="substep">$$M = \frac{T_{\text sing}}{T_{\text sup}} = \frac{\left|a_1 - a_2\right|}{\Delta a}$$</p>
     </div>
 
-    <div class="step slide" data-scale="0.5" data-x="6000" data-y="400" data-z="-500" data-rotate-y="-90" data-ref="bm">
+    <div class="step slide" data-scale="0.4" data-x="6000" data-y="-100" data-z="500" data-rotate-y="-90" data-ref="bm">
       <h1>BM Measure</h1>
       <p>Examples:</p>
       <ul>
@@ -143,17 +178,43 @@
       </ul>
     </div>
 
-    <div class="step slide" data-scale="0.5" data-x="4000" data-y="400" data-z="500" data-rotate-y="-90" data-ref="kwdc">
+    <div class="step slide" data-scale="0.4" data-x="4000" data-y="400" data-z="-500" data-rotate-y="-90" data-ref="kwdc">
       <h1>KWDC Measure</h1>
       <p>How many fundamental subsystems do we have to measure to collapse $\ket{A} + \ket{B}$ with precision $\delta$?</p>
       $$C_\delta := \frac{N}{n_\text{min}}$$
       <div class="substep">
         <p>Example:</p>
         <ul>
-          <li>GHZ state: C = N</li>
+          <li>GHZ state: $C = N$</li>
         </ul>
       </div>
     </div>
+
+    <div class="step slide" data-scale="0.4" data-x="4000" data-y="400" data-z="0" data-rotate-y="-90" data-ref="mavd">
+      <h1>MAvD Measure</h1>
+      <p>How many single-particle operations from $\ket{A}$ to $\ket{B}$?</p>
+      <ul>
+        <li>Start with $\mathcal H_0 = \operatorname{span} \{ \ket{A} \}$</li>
+        <li>Define $\mathcal H_i$ by applying all possible single particle operations on $\mathcal H_{i-1}$</li>
+        <li>Write $\ket{B} = \sum_i P_i \ket{B} = \sum_i \lambda_i \ket{v_i}$</li>
+        <li>Effective size $\avg{N} = \avg{\sum_i i \ket{v_i} \bra{v_i}}$</li>
+      </ul>
+    </div>
+
+    <div class="step slide" data-scale="0.4" data-x="5000" data-y="400" data-z="0" data-rotate-y="-90" data-ref="mavd">
+      <h1>MAvD Measure</h1>
+      <p>Examples</p>
+      <ul>
+        <li>GHZ: D = N</li>
+        <li>Superconducting qubit: D &asymp; 1</li>
+        <li>Many photon states: D = 1</li>
+      </ul>
+    </div>
+
+    <div class="step slide" data-scale="0.4" data-x="4000" data-y="400" data-z="500" data-rotate-y="-90" data-ref="fd">
+      <h1>Fisher Information</h1>
+      <p>A </p>
+    </div> -->
 
     <div id="overview" class="step invisible" data-scale="5" data-x="1500"</div>
   </div>
@@ -172,6 +233,12 @@
     </p>
     <p data-reflabel="kwdc">
       <a href="http://pra.aps.org/abstract/PRA/v75/i4/e042106">Korsbakken, Whaley, Dubois, Cirac 2007</a>
+    </p>
+    <p data-reflabel="mavd">
+      <a href="http://pra.aps.org/abstract/PRA/v78/i1/e012109">Marquardt, Abel, von Delft 2008</a>
+    </p>
+    <p data-reflabel="fd">
+      <a href="http://iopscience.iop.org/1367-2630/14/9/093039/">Fr&ouml;wis, D&uuml;r 2012</a>
     </p>
   </div>
   

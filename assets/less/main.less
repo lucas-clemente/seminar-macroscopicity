@@ -3,7 +3,7 @@
 @slide-width: 900px;
 @slide-height: 700px;
 @slide-padding-vertical: 40px;
-@slide-padding-horizontal: 60px;
+@slide-padding-horizontal: 55px;
 
 body {
   .radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
@@ -43,7 +43,13 @@ p {
 }
 
 .centered-vertical {
-  margin-top: @slide-height / 2 - 120px;
+  display: table;
+  padding: 0 !important;
+
+  >p,h1,div {
+    display: table-cell;
+    vertical-align: middle;
+  }
 }
 
 .pull-right {
@@ -51,10 +57,12 @@ p {
 }
 
 .step {
+  position: relative;
+  // border: 3px solid gray;
   width: @slide-width;
   height: @slide-height;
   padding: 40px;
-  line-height: 1.5;
+  line-height: 1.4;
   opacity: 0.3;
   .transition(opacity 1s);
   .box-sizing(border-box);
@@ -100,19 +108,34 @@ p {
 .remark {
   display: block;
   margin-top: 10px;
-  font-size: 75%;
+  font-size: 65%;
 }
 
 // Substeps
 
 .substep {
-  opacity: 0.3;
-  .transition(all 1s);
+  opacity: 0;
+}
+
+.substep-hidden {
+  display: none;
 }
 
 .substep.active {
+  display: inline;
   opacity: 1;
 }
+
+.big {
+  font-size: 52px;
+}
+
+ul.unstyled {
+  li {
+    list-style-type: none;
+  }
+}
+
 
 // -----------------------------------------------------------------
 // --- Slide specific styles ---------------------------------------
@@ -187,7 +210,7 @@ p {
   .animation(magnetomech-oscillate 0.2s ease-in-out infinite alternate);
 }
 
-.impress-on-measures-overview .step { opacity: 1; }
+.impress-on-macro-overview .step { opacity: 1; }
 
 .impress-on-intro-experiments .exp-image { opacity: 1; }
 

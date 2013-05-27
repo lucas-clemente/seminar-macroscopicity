@@ -34,16 +34,24 @@ p {
   text-align: center;
 }
 .centered-vertical {
-  margin-top: 230px;
+  display: table;
+  padding: 0 !important;
+}
+.centered-vertical > p,
+.centered-vertical h1,
+.centered-vertical div {
+  display: table-cell;
+  vertical-align: middle;
 }
 .pull-right {
   float: right;
 }
 .step {
+  position: relative;
   width: 900px;
   height: 700px;
   padding: 40px;
-  line-height: 1.5;
+  line-height: 1.4;
   opacity: 0.3;
   -webkit-transition: opacity 1s;
   -moz-transition: opacity 1s;
@@ -59,7 +67,7 @@ p {
   opacity: 1;
 }
 .slide {
-  padding: 40px 60px;
+  padding: 40px 55px;
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 10px;
@@ -82,25 +90,30 @@ p {
 .reference {
   position: absolute;
   bottom: 40px;
-  right: 60px;
+  right: 55px;
   margin: 0;
   font-size: smaller;
 }
 .remark {
   display: block;
   margin-top: 10px;
-  font-size: 75%;
+  font-size: 65%;
 }
 .substep {
-  opacity: 0.3;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -o-transition: all 1s;
-  -ms-transition: all 1s;
-  transition: all 1s;
+  opacity: 0;
+}
+.substep-hidden {
+  display: none;
 }
 .substep.active {
+  display: inline;
   opacity: 1;
+}
+.big {
+  font-size: 52px;
+}
+ul.unstyled li {
+  list-style-type: none;
 }
 #title p {
   margin-top: 70px;
@@ -242,7 +255,7 @@ p {
   -o-animation: magnetomech-oscillate 0.2s ease-in-out infinite alternate;
   animation: magnetomech-oscillate 0.2s ease-in-out infinite alternate;
 }
-.impress-on-measures-overview .step {
+.impress-on-macro-overview .step {
   opacity: 1;
 }
 .impress-on-intro-experiments .exp-image {

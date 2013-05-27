@@ -20,12 +20,12 @@
     refname = $this.data('ref');
     ref = refs[refname];
     if (!ref) {
-      console.warn('unresolved reference ' + refname);
+      return console.warn('unresolved reference ' + refname);
     }
     return $this.prepend(ref.clone());
   });
 
-  $('.slide>h1').each(function() {
+  $('h1').each(function() {
     if (this.parentElement.id === "title") {
       return;
     }

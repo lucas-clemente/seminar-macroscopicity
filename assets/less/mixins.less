@@ -29,7 +29,14 @@
   -o-transition: @transition;
   -ms-transition: @transition;
   transition: @transition;
+}
 
+.transition-delay(@transition-delay) {
+  -webkit-transition-delay: @transition-delay;
+  -moz-transition-delay: @transition-delay;
+  -o-transition-delay: @transition-delay;
+  -ms-transition-delay: @transition-delay;
+  transition-delay: @transition-delay;
 }
 
 .filter(@filter) {
