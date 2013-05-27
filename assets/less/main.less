@@ -107,8 +107,8 @@ p {
 
 .reference {
   position: absolute;
-  bottom: @slide-padding-vertical;
-  right: @slide-padding-horizontal;
+  bottom: @slide-padding-vertical * 2;
+  right: @slide-padding-horizontal * 2;
   margin: 0;
   font-size: smaller;
 }
@@ -218,10 +218,13 @@ ul.unstyled {
   .animation(magnetomech-oscillate 0.2s ease-in-out infinite alternate);
 }
 
+.impress-on-intro-experiments .exp-image { opacity: 1; }
+
 .impress-on-macro-overview .step { opacity: 1; }
 .impress-on-macro-overview2 .step { opacity: 1; }
 
-.impress-on-intro-experiments .exp-image { opacity: 1; }
+.impress-on-measures-overview .step { opacity: 1; }
+.impress-on-measures-overview2 .step { opacity: 1; }
 
 .impress-on-overview .step {
   opacity: 1;
