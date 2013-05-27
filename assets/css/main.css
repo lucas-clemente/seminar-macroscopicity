@@ -264,7 +264,7 @@ ul.unstyled li {
 .impress-on-intro-experiments .exp-image {
   opacity: 1;
 }
-.impress-on-macro-overview .step {
+.overview .step {
   opacity: 1;
 }
 .impress-on-macro-overview2 .step {
@@ -274,6 +274,24 @@ ul.unstyled li {
   opacity: 1;
 }
 .impress-on-measures-overview2 .step {
+  opacity: 1;
+}
+.impress-on-overview-disconnectivity #disconnectivity .step {
+  opacity: 1;
+}
+.impress-on-overview-dsc #dsc .step {
+  opacity: 1;
+}
+.impress-on-overview-bm #bm .step {
+  opacity: 1;
+}
+.impress-on-overview-kwdc #kwdc .step {
+  opacity: 1;
+}
+.impress-on-overview-mavd #mavd .step {
+  opacity: 1;
+}
+.impress-on-overview-fd #fd .step {
   opacity: 1;
 }
 .impress-on-overview .step {

@@ -91,20 +91,20 @@
       <p>
         Behavior is neither<br>
         <b>classical</b>, nor an<br>
-        <b>accumulated quantum effect</b><span class="remark">Think Debye model for specific heat.</span>
+        <b>accumulated quantum effect</b>.<span class="remark">Think Debye model for specific heat.</span>
       </p>
     </div>
 
     <div class="step centered-vertical big" data-scale="0.6" data-x="4000" data-y="50" data-z="150" data-rotate-y="-90" data-rotate-z="90">
       <div>
-        <b>Idea:</b> Use <em>effective</em> number of particles
+        <b>Idea:</b> Use <em>effective</em> number of particles.
         <span class="remark">The smallest system size so that quantum mechanics explains the behavior. Think N<sub>eff</sub> = 2 for Cooper pairs.</span>
       </div>
     </div>
 
     <div class="step centered-vertical big" data-scale="0.6" data-x="4000" data-y="50" data-z="-150" data-rotate-y="-90" data-rotate-z="90">
       <div>
-        Call a system <b>macroscopic</b> if effective size is linear N<sub>eff</sub> = $\mathcal O$ (N)
+        Call a system <b>macroscopic</b> if effective size is linear N<sub>eff</sub> = $\mathcal O$ (N).
         <span class="remark">
           I.e. all particles need to be described quantum mechanically.
         </span>
@@ -126,53 +126,55 @@
       <h1>Measures for N<sub>eff</sub></h1>
     </div>
 
-    <div class="step" data-scale="0.5" data-x="-500" data-y="2000" data-z="700" data-rotate-x="90" data-ref="leggett">
+    <div class="step" id="overview-disconnectivity" data-scale="0.8" data-x="-700" data-y="2000" data-z="900" data-rotate-x="90" data-ref="leggett">
       <h1>Disconnectivity</h1>
     </div>
+    
+    <section id="disconnectivity">
+      <div class="step centered-vertical" data-scale="0.4" data-x="-750" data-y="2000" data-z="950" data-rotate-x="90" data-rotate-z="90">
+        <div>
+          <p><b>Two Measures: (not strictly N<sub>eff</sub>)</b></p>
+          <p><b>Extensive difference $\Lambda$</b>: difference of states vs reference value (e.g. $\Delta \Phi / \Phi_0$)</p>
+          <p><b>Disconnectivity D:</b> degree of entanglement, possibly reduced entropy</p>
+        </div>
+      </div>
 
-    <div class="step" data-scale="0.5" data-x="0" data-y="2000" data-z="700" data-rotate-x="90" data-ref="dsc">
+      <div class="step centered-vertical" data-scale="0.4" data-x="-950" data-y="2000" data-z="950" data-rotate-x="90" data-rotate-z="90">
+        <div>
+          <p><b>Examples:</b></p>
+          <p>GHZ State of N particles: D = N</p>
+          <p>C<sub>60</sub>: D &asymp; 10<sup>6</sup></p>
+          <p>Atomic ensembles: D &asymp; 10<sup>7</sup></p>
+          <p>SQUIDs: D &asymp; 10<sup>10</sup></p>
+        </div>
+      </div>
+    </section>
+
+    <div class="step" data-scale="0.8" data-x="0" data-y="2000" data-z="900" data-rotate-x="90" data-ref="dsc">
       <h1>DSC Measure</h1>
     </div>
 
-    <div class="step" data-scale="0.5" data-x="500" data-y="2000" data-z="700" data-rotate-x="90" data-ref="bm">
+    <div class="step" data-scale="0.8" data-x="700" data-y="2000" data-z="900" data-rotate-x="90" data-ref="bm">
       <h1>BM Measure</h1>
     </div>
 
-    <div class="step" data-scale="0.5" data-x="-500" data-y="2000" data-z="1100" data-rotate-x="90" data-ref="kwdc">
+    <div class="step" data-scale="0.8" data-x="-700" data-y="2000" data-z="1500" data-rotate-x="90" data-ref="kwdc">
       <h1>KWDC Measure</h1>
     </div>
 
-    <div class="step" data-scale="0.5" data-x="0" data-y="2000" data-z="1100" data-rotate-x="90" data-ref="mavd">
+    <div class="step" data-scale="0.8" data-x="0" data-y="2000" data-z="1500" data-rotate-x="90" data-ref="mavd">
       <h1>MAvD Measure</h1>
     </div>
 
-    <div class="step" data-scale="0.5" data-x="500" data-y="2000" data-z="1100" data-rotate-x="90" data-ref="fd">
+    <div class="step" data-scale="0.8" data-x="700" data-y="2000" data-z="1500" data-rotate-x="90" data-ref="fd">
       <h1>Fisher Information</h1>
     </div>
 
     <div class="step invisible" id="measures-overview2" data-scale="3" data-y="2000" data-z="1000" data-rotate-x="90">
     </div>
 
-    <!-- <div class="step slide" data-scale="0.4" data-x="4000" data-y="-100" data-z="-500" data-rotate-y="-90" data-ref="leggett">
-      <h1>Disconnectivity</h1>
-      <p><b>Measures:</b></p>
-      <ul>
-        <li><b>Extensive difference $\Lambda$</b>: difference of states vs reference value (e.g. $\Delta \Phi / \Phi_0$)</li>
-        <li><b>Disconnectivity D:</b> degree of entanglement, possibly reduced entropy</li>
-      </ul>
-    </div>
-
-    <div class="step slide" data-scale="0.4" data-x="5000" data-y="-100" data-z="-500" data-rotate-y="-90" data-ref="leggett">
-      <h1>Disconnectivity</h1>
-      <p><b>Examples:</b></p>
-      <ul>
-        <li>GHZ State of N particles: D = N</li>
-        <li>C<sub>60</sub>: D &asymp; 10<sup>6</sup></li>
-        <li>Atomic ensembles: D &asymp; 10<sup>7</sup></li>
-        <li>SQUIDs: D &asymp; 10<sup>10</sup></li>
-      </ul>
-    </div>
-
+    <!--
+    
     <div class="step slide" data-scale="0.4" data-x="4000" data-y="-100" data-z="0" data-rotate-y="-90" data-ref="dsc">
       <h1>DSC Measure</h1>
       <p><b>Idea:</b> Compare realistic (e.g. BEC) &harr; GHZ states</p>
