@@ -316,8 +316,7 @@ ul.unstyled li {
   -ms-transition-delay: 0.5s;
   transition-delay: 0.5s;
 }
-#nh-overview.present q,
-#nh-overview.past q {
+#nh-overview.present q {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
   -o-transform: scale(1);
