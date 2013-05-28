@@ -32,4 +32,18 @@
     return $(this).prepend('<i class="icon-double-angle-right"></i> ');
   });
 
+  $(document).keypress(function(e) {
+    if (e.keyCode !== 102) {
+      return;
+    }
+    e.preventDefault();
+    if (document.documentElement.requestFullScreen) {
+      return document.documentElement.requestFullScreen();
+    } else if (document.documentElement.mozRequestFullScreen) {
+      return document.documentElement.mozRequestFullScreen();
+    } else if (document.documentElement.webkitRequestFullScreen) {
+      return document.documentElement.webkitRequestFullScreen();
+    }
+  });
+
 }).call(this);

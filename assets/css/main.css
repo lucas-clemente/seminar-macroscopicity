@@ -277,6 +277,9 @@ ul.unstyled li {
 .impress-on-measures-overview2 .step {
   opacity: 1;
 }
+.impress-on-measures-overview3 .step {
+  opacity: 1;
+}
 .impress-on-overview-disconnectivity #disconnectivity .step {
   opacity: 1;
 }
@@ -294,6 +297,13 @@ ul.unstyled li {
 }
 .impress-on-nh-overview2 .step {
   opacity: 1;
+}
+#measures-comp td,
+#measures-comp th {
+  text-align: left;
+  padding-bottom: 10px;
+  padding-right: 40px;
+  font-size: 0.8em;
 }
 #nh-overview q {
   display: block;
@@ -316,4 +326,14 @@ ul.unstyled li {
 .impress-on-overview .step {
   opacity: 1;
   cursor: pointer;
+}
+#fin {
+  display: none;
+  position: fixed;
+  top: 50px;
+  width: 100%;
+  text-align: center;
+}
+.impress-on-overview #fin {
+  display: block;
 }
