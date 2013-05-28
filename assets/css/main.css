@@ -323,6 +323,9 @@ ul.unstyled li {
   -ms-transform: scale(1);
   transform: scale(1);
 }
+#img-bounds {
+  height: 420px;
+}
 .impress-on-overview .step {
   opacity: 1;
   cursor: pointer;

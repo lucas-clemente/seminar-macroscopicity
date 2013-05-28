@@ -20,7 +20,6 @@
     $\newcommand{\bra}[1]{\left\langle#1\right|}$
     $\newcommand{\braket}[2]{\left \langle #1 \right|\left. #2\right\rangle}$
     $\newcommand{\avg}[1]{\left \langle #1 \right \rangle}$
-    $\newcommand{\dd}{\mathrm d}$
   </div>
 
   <div id="impress">
@@ -278,7 +277,7 @@
       <q>&hellip; call a quantum system the more macroscopic the better its experimental demostration rules out a minimal modification of quantum mechanics &hellip;</q>
     </div>
     
-    <div class="step" data-scale="0.3" data-x="-4000" data-y="-200" data-z="700" data-rotate-y="90" data-rotate-x="-90">
+    <div class="step" data-scale="0.3" data-x="-4000" data-y="-200" data-z="600" data-rotate-y="90" data-rotate-x="-90">
       <h1>Minimal Extension of QM</h1>
       <p>All extensions <em>classicalize</em> the system:</p>
       $$\partial_t \rho_N = [H, \rho_N] / i \hbar + \mathcal L_N \rho_N$$
@@ -293,12 +292,27 @@
       </ol>
     </div>
     
-    <div class="step" data-scale="0.3" data-x="-4000" data-y="-200" data-z="450" data-rotate-y="90" data-rotate-x="-90">
+    <div class="step" data-scale="0.3" data-x="-4000" data-y="-200" data-z="400" data-rotate-y="90" data-rotate-x="-90">
       <p>For a single particle (using <a href="http://www.sciencedirect.com/science/article/pii/0034487793900146">Holevo 1993)</a>:</p>
-      $$\mathcal L_1 = \frac{1}{\tau} \left[ \int \dd^3 s \dd^3 q g(s, q) W(s, q) \rho W^\dagger (s, q) - \rho \right ]$$
-      <p>where $W(s, mv) = \exp [ i/\hbar (P s - m v X) ]$.</p>
+      $$\mathcal L_1 = \frac{1}{\tau} \left[ \int d^3 s d^3 q g(s, q) W(s, q) \rho W^\dagger (s, q) - \rho \right ]$$
+      <p>where $W(s, q) = \exp [ i/\hbar (P s - q X) ]$.</p>
       <p>$g(s, q)$ a positive, isotropic, normalized phase space distribution with standard deviations $\sigma_s$, $\sigma_q$.</p>
       <p>Matrix elements of $\rho$ that are larger than $\sigma_s$, $\sigma_q$ decay with $\tau$.</p>
+    </div>
+
+    <div class="step" data-scale="0.3" data-x="-4000" data-y="-200" data-z="200" data-rotate-y="90" data-rotate-x="-90">
+      <p>Using the other conditions we get, for a massive object (M, mass density $\varrho$) approximated by a single particle:</p>
+      $$\frac{1}{\tau} = \frac{1}{\tau_e} \frac{1}{m_e^2} \int d^3 s d^3 q g_e(s, q) |\tilde \varrho(q)|^2$$
+      $$g(s, q) = \frac{\tau M^3}{\tau_e m_e^5} g_e(s M/m_e, q) |\tilde \varrho(q)|^2$$
+      <p>Note that for $\sigma_s = 0$ we obtain continous spontaneous localization.</p>
+    </div>
+
+    <div class="step" data-scale="0.3" data-x="-4000" data-y="-200" data-z="0" data-rotate-y="90" data-rotate-x="-90">
+      <p>Different experimental bounds:</p>
+      <div class="centered">
+        <img id="img-bounds" src="assets/images/bounds.png">
+        <p class="remark">Taken from <a href="http://prl.aps.org/abstract/PRL/v110/i16/e160403">Nimmrichter, Hornberger 2013</a></p>
+      </div>
     </div>
 
 
