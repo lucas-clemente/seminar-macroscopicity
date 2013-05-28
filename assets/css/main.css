@@ -326,6 +326,9 @@ ul.unstyled li {
 #img-bounds {
   height: 420px;
 }
+#img-history {
+  height: 420px;
+}
 .impress-on-overview .step {
   opacity: 1;
   cursor: pointer;
