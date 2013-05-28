@@ -277,7 +277,7 @@
       <q>&hellip; call a quantum system the more macroscopic the better its experimental demostration rules out a minimal modification of quantum mechanics &hellip;</q>
     </div>
     
-    <div class="step" data-scale="0.3" data-x="-4000" data-y="-200" data-z="600" data-rotate-y="90" data-rotate-x="-90">
+    <div class="step" data-scale="0.35" data-x="-4000" data-y="-100" data-z="750" data-rotate-y="90" data-rotate-x="-90">
       <h1>Minimal Extension of QM</h1>
       <p>All extensions <em>classicalize</em> the system:</p>
       $$\partial_t \rho_N = [H, \rho_N] / i \hbar + \mathcal L_N \rho_N$$
@@ -292,7 +292,7 @@
       </ol>
     </div>
     
-    <div class="step" data-scale="0.3" data-x="-4000" data-y="-200" data-z="400" data-rotate-y="90" data-rotate-x="-90">
+    <div class="step" data-scale="0.35" data-x="-4000" data-y="-100" data-z="500" data-rotate-y="90" data-rotate-x="-90">
       <p>For a single particle (using <a href="http://www.sciencedirect.com/science/article/pii/0034487793900146">Holevo 1993)</a>:</p>
       $$\mathcal L_1 = \frac{1}{\tau} \left[ \int d^3 s d^3 q g(s, q) W(s, q) \rho W^\dagger (s, q) - \rho \right ]$$
       <p>where $W(s, q) = \exp [ i/\hbar (P s - q X) ]$.</p>
@@ -300,22 +300,21 @@
       <p>Matrix elements of $\rho$ that are larger than $\sigma_s$, $\sigma_q$ decay with $\tau$.</p>
     </div>
 
-    <div class="step" data-scale="0.3" data-x="-4000" data-y="-200" data-z="200" data-rotate-y="90" data-rotate-x="-90">
+    <div class="step" data-scale="0.35" data-x="-4000" data-y="-100" data-z="250" data-rotate-y="90" data-rotate-x="-90">
       <p>Using the other conditions we get, for a massive object (M, mass density $\varrho$) approximated by a single particle:</p>
       $$\frac{1}{\tau} = \frac{1}{\tau_e} \frac{1}{m_e^2} \int d^3 s d^3 q g_e(s, q) |\tilde \varrho(q)|^2$$
       $$g(s, q) = \frac{\tau M^3}{\tau_e m_e^5} g_e(s M/m_e, q) |\tilde \varrho(q)|^2$$
       <p>Note that for $\sigma_s = 0$ we obtain continous spontaneous localization.</p>
     </div>
 
-    <div class="step" data-scale="0.3" data-x="-4000" data-y="-200" data-z="0" data-rotate-y="90" data-rotate-x="-90">
+    <div class="step" data-scale="0.35" data-x="-4000" data-y="-100" data-z="0" data-rotate-y="90" data-rotate-x="-90" data-ref="nh">
       <p>Different experimental bounds:</p>
       <div class="centered">
         <img id="img-bounds" src="assets/images/bounds.png">
-        <p class="remark">Taken from <a href="http://prl.aps.org/abstract/PRL/v110/i16/e160403">Nimmrichter, Hornberger 2013</a></p>
       </div>
     </div>
 
-    <div class="step" data-scale="0.3" data-x="-4000" data-y="-200" data-z="-200" data-rotate-y="90" data-rotate-x="-90">
+    <div class="step" data-scale="0.35" data-x="-4000" data-y="-100" data-z="-250" data-rotate-y="90" data-rotate-x="-90">
       <p>Define macroscopicity as</p>
       $$\mu = \log_{10} \left( \frac{\tau_e}{1~\text{s}} \right)$$
       For double-slit-like experiments:
@@ -323,10 +322,52 @@
       where $f$ is the visibility.
     </div>
 
-    <div class="step" data-scale="0.3" data-x="-4000" data-y="-200" data-z="-400" data-rotate-y="90" data-rotate-x="-90">
+    <div class="step" data-scale="0.35" data-x="-4000" data-y="-100" data-z="-500" data-rotate-y="90" data-rotate-x="-90" data-ref="nh">
       <div class="centered">
         <img id="img-history" src="assets/images/history.png">
-        <p class="remark">Taken from <a href="http://prl.aps.org/abstract/PRL/v110/i16/e160403">Nimmrichter, Hornberger 2013</a></p>
+      </div>
+    </div>
+
+    <div class="step centered centered-vertical" id="macro-table" data-scale="0.45" data-x="-4000" data-y="-100" data-z="-750" data-rotate-y="90" data-rotate-x="-90" data-ref="nh">
+      <div>
+        <table>
+          <tr>
+            <th>Experiment</th>
+            <th>&mu;</th>
+          </tr>
+          <tr>
+            <td>Oscillating micromembrane</td>
+            <td>11.5</td>
+          </tr>
+          <tr>
+            <td>Hypothetical large SQUID</td>
+            <td>14.5</td>
+          </tr>
+          <tr>
+            <td>Talbot-Lau interference at 10<sup>5</sup> amu</td>
+            <td>14.5</td>
+          </tr>
+          <tr>
+            <td>Satellite atom (Cs) interferometer</td>
+            <td>14.5</td>
+          </tr>
+          <tr>
+            <td>Oscillating micromirror</td>
+            <td>19.0</td>
+          </tr>
+          <tr>
+            <td>Nanosphere interference</td>
+            <td>20.5</td>
+          </tr>
+          <tr>
+            <td>Talbot-Lau interference at 10<sup>8</sup> amu</td>
+            <td>23.3</td>
+          </tr>
+          <tr>
+            <td>Schro ̈dinger gedanken experiment</td>
+            <td>~57</td>
+          </tr>
+        </table>
       </div>
     </div>
 
