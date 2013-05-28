@@ -268,6 +268,9 @@ ul.unstyled li {
 .overview .step {
   opacity: 1;
 }
+.impress-on-macro-overview .step {
+  opacity: 1;
+}
 .impress-on-macro-overview2 .step {
   opacity: 1;
 }
