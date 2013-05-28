@@ -95,7 +95,7 @@ p {
 }
 .reference {
   position: absolute;
-  bottom: 80px;
+  bottom: 40px;
   right: 110px;
   margin: 0;
   font-size: smaller;
@@ -107,12 +107,13 @@ p {
 }
 .substep {
   opacity: 0;
-}
-.substep-hidden {
-  display: none;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -ms-transition: all 1s;
+  transition: all 1s;
 }
 .substep.active {
-  display: inline;
   opacity: 1;
 }
 .big {

@@ -131,7 +131,7 @@
     </div>
     
     <section id="disconnectivity">
-      <div class="step centered-vertical" data-scale="0.4" data-x="-750" data-y="2000" data-z="950" data-rotate-x="90" data-rotate-z="90">
+      <div class="step centered-vertical big" data-scale="0.35" data-x="-650" data-y="2000" data-z="950" data-rotate-x="90" data-rotate-z="90">
         <div>
           <p><b>Two Measures: (not strictly N<sub>eff</sub>)</b></p>
           <p><b>Extensive difference $\Lambda$</b>: difference of states vs reference value (e.g. $\Delta \Phi / \Phi_0$)</p>
@@ -139,7 +139,7 @@
         </div>
       </div>
 
-      <div class="step centered-vertical" data-scale="0.4" data-x="-950" data-y="2000" data-z="950" data-rotate-x="90" data-rotate-z="90">
+      <div class="step centered-vertical big" data-scale="0.35" data-x="-900" data-y="2000" data-z="950" data-rotate-x="90" data-rotate-z="90">
         <div>
           <p><b>Examples:</b></p>
           <p>GHZ State of N particles: D = N</p>
@@ -150,13 +150,72 @@
       </div>
     </section>
 
-    <div class="step" data-scale="0.8" data-x="0" data-y="2000" data-z="900" data-rotate-x="90" data-ref="dsc">
+    <div class="step" id="overview-dsc" data-scale="0.8" data-x="0" data-y="2000" data-z="900" data-rotate-x="90" data-ref="dsc">
       <h1>DSC Measure</h1>
+      <p></p>
+      <div class="substep">
+      </div>
     </div>
 
-    <div class="step" data-scale="0.8" data-x="700" data-y="2000" data-z="900" data-rotate-x="90" data-ref="bm">
+    <section id="dsc">
+      <div class="step centered-vertical big" data-scale="0.35" data-x="50" data-y="2000" data-z="950" data-rotate-x="90" data-rotate-z="90">
+        <p>
+          <b>Idea:</b> Compare realistic &harr; GHZ states
+          <span class="remark">e.g. BEC states.</span>
+        </p>
+      </div>
+
+      <div class="step centered-vertical big" data-scale="0.35" data-x="-100" data-y="2000" data-z="950" data-rotate-x="90" data-rotate-z="90">
+        <p>
+          $$\ket{\psi} = \frac{1}{\sqrt{K}} \left( \ket{0}^{\otimes N} + \ket{\epsilon}^{\otimes N} \right)$$
+          where $\left| \braket{0}{\epsilon} \right|^2 = 1 - \epsilon^2$.
+        </p>
+      </div>
+
+      <div class="step centered-vertical big" data-scale="0.35" data-x="-250" data-y="2000" data-z="950" data-rotate-x="90" data-rotate-z="90">
+        <div>
+          <p>Through decoherence rate / max distillation:</p>
+          <p>$$N_{eff} = N \epsilon^2$$</p>        
+        </div>
+      </div>
+    </section>
+
+    <div class="step" id="overview-bm" data-scale="0.8" data-x="700" data-y="2000" data-z="900" data-rotate-x="90" data-ref="bm">
       <h1>BM Measure</h1>
     </div>
+
+    <section id="bm">
+      <div class="step centered-vertical big" data-scale="0.4" data-x="900" data-y="2000" data-z="950" data-rotate-x="90" data-rotate-z="90">
+        <p>Can a state improve phase estimation in interferometry?</p>
+      </div>
+      
+      <div class="step centered-vertical big" data-scale="0.4" data-x="800" data-y="2000" data-z="950" data-rotate-x="90" data-rotate-z="90">
+        <p>Let $\ket{\psi(t)} = e^{-i H t / \hbar} \ket{\psi}$ and <br>$\theta(\ket{\psi}) :=$ time to reach orthogonal state.</p> 
+      </div>
+      
+      <div class="step centered-vertical big" data-scale="0.4" data-x="700" data-y="2000" data-z="950" data-rotate-x="90" data-rotate-z="90">
+        <p>
+          Observe that $\theta(\ket{\psi}) \ll \theta(\ket{0}), \theta(\ket{1})$.
+          <span class="remark">Think small oscillations in an interference pattern.</span>
+        </p> 
+      </div>
+      
+      <div class="step centered-vertical big" data-scale="0.4" data-x="600" data-y="2000" data-z="950" data-rotate-x="90" data-rotate-z="90">
+        <p>
+          Define the effective particle number
+          $$N_\text{eff} = \left[ \frac{\theta(\ket{0}) + \theta(\ket{1})}{\theta{\ket{\psi}}} \right]^2$$
+        </p>
+      </div>
+      
+      <div class="step centered-vertical big" data-scale="0.4" data-x="450" data-y="2000" data-z="950" data-rotate-x="90" data-rotate-z="90">
+        <div>
+          <p><b>Examples:</b></p>
+          <p>C<sub>60</sub>: N &asymp; 5</p>
+          <p>SQUIDs: N &asymp; 33</p>
+          <p>Optomechanical $\ket{0} + \ket{1}$: N = 1 (?)</p>
+        </div>
+      </div>
+    </section>
 
     <div class="step" data-scale="0.8" data-x="-700" data-y="2000" data-z="1500" data-rotate-x="90" data-ref="kwdc">
       <h1>KWDC Measure</h1>
@@ -174,46 +233,13 @@
     </div>
 
     <!--
-    
-    <div class="step slide" data-scale="0.4" data-x="4000" data-y="-100" data-z="0" data-rotate-y="-90" data-ref="dsc">
-      <h1>DSC Measure</h1>
-      <p><b>Idea:</b> Compare realistic (e.g. BEC) &harr; GHZ states</p>
-      $$\ket{\psi} = \frac{1}{\sqrt{K}} \left( \ket{0}^{\otimes N} + \ket{\epsilon}^{\otimes N} \right)$$
-      <p>where $\left| \braket{0}{\epsilon} \right|^2 = 1 - \epsilon^2$.</p>
-      <div class="substep">
-        <p>Through decoherence rate / max distillation:</p>
-        <p>$$N_{eff} = N \epsilon^2$$</p>        
-      </div>
-    </div>
+      
+      Problems:
 
-    <div class="step slide" data-scale="0.4" data-x="4000" data-y="-100" data-z="500" data-rotate-y="-90" data-ref="bm">
-      <h1>BM Measure</h1>
-      <p><b>Problems</b> with Disconnectivity / DSC:</p>
       <ul>
         <li>Dependence on <b>preferred</b> set of basis states</li>
         <li>Particle number &ne; Macroscopicity<span class="remark">e.g. 10 photon NOON state is visible = macroscopic</span></li>
       </ul>
-      <p class="substep"><b>Solution:</b> Use preferred observable instead of basis</p>
-    </div>
-
-    <div class="step slide" data-scale="0.4" data-x="5000" data-y="-100" data-z="500" data-rotate-y="-90" data-ref="bm">
-      <h1>BM Measure</h1>
-      <p>Superposition in observable A:</p>
-      $$\ket{\psi} = \int \braket{a}{\psi}\ket{a} \dd a\\ \left|\braket{a}{\psi}\right|^2 = f(a - a_1) + f(a - a_2)$$
-      <p class="substep">Orthogonal state reached after time $T \propto (a_2 - a_1)^{-1}$.</p>
-      <p class="substep">$$M = \frac{T_{\text sing}}{T_{\text sup}} = \frac{\left|a_1 - a_2\right|}{\Delta a}$$</p>
-    </div>
-
-    <div class="step slide" data-scale="0.4" data-x="6000" data-y="-100" data-z="500" data-rotate-y="-90" data-ref="bm">
-      <h1>BM Measure</h1>
-      <p>Examples:</p>
-      <ul>
-        <li>Single Qubit: M = 1</li>
-        <li>C<sub>60</sub>: M &asymp; 5</li>
-        <li>SQUIDs: M &asymp; 33</li>
-        <li>Optomechanical $\ket{0} + \ket{1}$: M = 1 (?)</li>
-      </ul>
-    </div>
 
     <div class="step slide" data-scale="0.4" data-x="4000" data-y="400" data-z="-500" data-rotate-y="-90" data-ref="kwdc">
       <h1>KWDC Measure</h1>

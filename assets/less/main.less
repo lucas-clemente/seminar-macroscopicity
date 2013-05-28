@@ -107,7 +107,7 @@ p {
 
 .reference {
   position: absolute;
-  bottom: @slide-padding-vertical * 2;
+  bottom: @slide-padding-vertical;
   right: @slide-padding-horizontal * 2;
   margin: 0;
   font-size: smaller;
@@ -123,14 +123,10 @@ p {
 
 .substep {
   opacity: 0;
-}
-
-.substep-hidden {
-  display: none;
+  .transition(all 1s);
 }
 
 .substep.active {
-  display: inline;
   opacity: 1;
 }
 
