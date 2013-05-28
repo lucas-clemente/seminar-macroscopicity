@@ -5,7 +5,7 @@
   <meta name="author" content="Lucas Clemente">
   <title>Macroscopicity Measures</title>
   <link rel="stylesheet" href="assets/css/main.css">
-  <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600' rel='stylesheet' type='text/css'>
   <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
   <base target="_blank">
 </head>
@@ -150,7 +150,7 @@
       </div>
     </section>
 
-    <div class="step" id="overview-dsc" data-scale="0.8" data-x="0" data-y="2000" data-z="900" data-rotate-x="90" data-ref="dsc">
+    <div class="step" data-scale="0.8" data-x="0" data-y="2000" data-z="900" data-rotate-x="90" data-ref="dsc">
       <h1>DSC Measure</h1>
       <p><b>Idea:</b> Compare realistic (e.g. BEC) &harr; GHZ states</p>
       <p>
@@ -200,23 +200,117 @@
       </div>
     </section>
 
-    <div class="step" id="overview-kwdc" data-scale="0.8" data-x="-700" data-y="2000" data-z="1500" data-rotate-x="90" data-ref="kwdc">
+    <div class="step" data-scale="0.8" data-x="-700" data-y="2000" data-z="1500" data-rotate-x="90" data-ref="kwdc">
       <h1>KWDC Measure</h1>
       <p>Divide $\ket{0} + \ket{1}$ into maximal number (n) of subsystems, so that measuring <em>one</em> we can distinguish the states with precision $\delta$.</p>
       <p>Define effective size N<sub>eff</sub> = n.</p>
       <p>Here, macroscopic = locally distinguishable</p>
     </div>
 
-    <div class="step" data-scale="0.8" data-x="0" data-y="2000" data-z="1500" data-rotate-x="90" data-ref="mavd">
+    <div class="step" id="overview-mavd" data-scale="0.8" data-x="0" data-y="2000" data-z="1500" data-rotate-x="90" data-ref="mavd">
       <h1>MAvD Measure</h1>
     </div>
 
-    <div class="step" data-scale="0.8" data-x="700" data-y="2000" data-z="1500" data-rotate-x="90" data-ref="fd">
+    <section id="mavd">
+      <div class="step centered-vertical big" data-scale="0.35" data-x="150" data-y="2000" data-z="1550" data-rotate-x="90" data-rotate-z="90">
+        <p>How many <b>single-particle</b> operations do we need to apply to get from $\ket{0}$ to $\ket{1}$?</p>
+      </div>
+
+      <div class="step centered-vertical big" data-scale="0.35" data-x="0" data-y="2000" data-z="1550" data-rotate-x="90" data-rotate-z="90">
+        <div>
+          <ol>
+            <li>Start with $\mathcal H_0 = \operatorname{span} \{ \ket{A} \}$</li>
+            <li>Define $\mathcal H_i$ by applying all possible single particle operations on $\mathcal H_{i-1}$</li>
+            <li>Write $\ket{B} = \sum_i P_i \ket{B} = \sum_i \lambda_i \ket{v_i}$</li>
+            <li>Effective size $\avg{N} = \avg{\sum_i i \ket{v_i} \bra{v_i}}$</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="step centered-vertical big" data-scale="0.35" data-x="-200" data-y="2000" data-z="1550" data-rotate-x="90" data-rotate-z="90">
+        <div>
+          <p><b>Examples:</b></p>
+          <p>GHZ: N<sub>eff</sub> = N</p>
+          <p>Superconducting qubit: N<sub>eff</sub> &asymp; 1</p>
+          <p>Many photon states: N<sub>eff</sub> = 1</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="step" id="overview-fisher" data-scale="0.8" data-x="700" data-y="2000" data-z="1500" data-rotate-x="90" data-ref="fd">
       <h1>Fisher Information</h1>
     </div>
 
+    <section id="fisher">
+      <div class="step centered-vertical big" data-scale="0.35" data-x="850" data-y="2000" data-z="1550" data-rotate-x="90" data-rotate-z="90">
+        <div>
+          <p><b>Fisher Information:</b> expected value of the observed information.</p>
+          <p>Inverse of <b>Cramer-Rao-Bound</b>, "key resource" for metrology.</p>
+        </div>
+      </div>
+
+      <div class="step centered-vertical big" data-scale="0.35" data-x="700" data-y="2000" data-z="1550" data-rotate-x="90" data-rotate-z="90">
+        <div>
+          <p>Explicit form: $$\mathcal F(\rho, H) = 2 \sum_{i, j}^{2^N} \frac{(\pi_i - \pi_j)^2}{\pi_i + \pi_j} \left| \bra{i} H \ket{j} \right|^2$$</p>
+          <p>For pure states: $$\mathcal F(\psi, H) = 4 \left[ \langle H^2 \rangle - \langle H \rangle^2 \right]$$</p>
+        </div>
+      </div>
+
+      <div class="step centered-vertical big" data-scale="0.35" data-x="550" data-y="2000" data-z="1550" data-rotate-x="90" data-rotate-z="90">
+        <div>
+          <p>Let $A = \sum_i A_i$ be a locally acting operator with $||A_i|| = 1$.
+            $$N_\text{eff}^F = \operatorname{max}_A \mathcal F(\rho, A) / (4 N)$$</p>
+        </div>
+      </div>
+
+      <div class="step centered-vertical big" data-scale="0.35" data-x="430" data-y="2000" data-z="1550" data-rotate-x="90" data-rotate-z="90">
+        <div>
+          <p>Better measure: <b>relative</b> Fisher information $$N_\text{eff} = \frac{2 N_\text{eff}^F(\ket{\psi})}{N_\text{eff}^F(\ket{0}) + N_\text{eff}^F(\ket{1})}$$</p>
+        </div>
+      </div>
+    </section>
+
     <div class="step invisible" id="measures-overview2" data-scale="3" data-y="2000" data-z="1000" data-rotate-x="90">
     </div>
+    
+    <div class="step" id="nh-overview" data-scale="2" data-x="-4000" data-y="0" data-z="100" data-rotate-y="90" data-ref="nh">
+      <h1>NH Measure</h1>
+      <q>&hellip; call a quantum system the more macroscopic the better its experimental demostration rules out a minimal modification of quantum mechanics &hellip;</q>
+    </div>
+    
+    <div class="step" data-scale="0.3" data-x="-4000" data-y="-200" data-z="700" data-rotate-y="90">
+      <h1>Minimal Extension of QM</h1>
+      <p>All extensions <em>classicalize</em> the system:</p>
+      $$\partial_t \rho_N = [H, \rho_N] / i \hbar + \mathcal L_N \rho_N$$
+      <ol>
+        <li>Invariant under Galilean trafo</li>
+        <li>Leave exchange symmetry unaffected</li>
+        <li>
+          Innocent bystander condition
+          <span class="remark">Adding an uncorrelated system leaves reduced state unchanged.</span>
+        </li>
+        <li>Scale invariant with respect to CM</li>
+      </ol>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="step invisible" id="nh-overview2" data-scale="2" data-x="-4000" data-y="0" data-z="100" data-rotate-y="90"></div>
+
+
+
+
+
+
+
+
+
+
 
     <!--
       
@@ -227,45 +321,9 @@
         <li>Particle number &ne; Macroscopicity<span class="remark">e.g. 10 photon NOON state is visible = macroscopic</span></li>
       </ul>
 
-    <div class="step slide" data-scale="0.4" data-x="4000" data-y="400" data-z="-500" data-rotate-y="-90" data-ref="kwdc">
-      <h1>KWDC Measure</h1>
-      <p>How many fundamental subsystems do we have to measure to collapse $\ket{A} + \ket{B}$ with precision $\delta$?</p>
-      $$C_\delta := \frac{N}{n_\text{min}}$$
-      <div class="substep">
-        <p>Example:</p>
-        <ul>
-          <li>GHZ state: $C = N$</li>
-        </ul>
-      </div>
-    </div>
+    -->
 
-    <div class="step slide" data-scale="0.4" data-x="4000" data-y="400" data-z="0" data-rotate-y="-90" data-ref="mavd">
-      <h1>MAvD Measure</h1>
-      <p>How many single-particle operations from $\ket{A}$ to $\ket{B}$?</p>
-      <ul>
-        <li>Start with $\mathcal H_0 = \operatorname{span} \{ \ket{A} \}$</li>
-        <li>Define $\mathcal H_i$ by applying all possible single particle operations on $\mathcal H_{i-1}$</li>
-        <li>Write $\ket{B} = \sum_i P_i \ket{B} = \sum_i \lambda_i \ket{v_i}$</li>
-        <li>Effective size $\avg{N} = \avg{\sum_i i \ket{v_i} \bra{v_i}}$</li>
-      </ul>
-    </div>
-
-    <div class="step slide" data-scale="0.4" data-x="5000" data-y="400" data-z="0" data-rotate-y="-90" data-ref="mavd">
-      <h1>MAvD Measure</h1>
-      <p>Examples</p>
-      <ul>
-        <li>GHZ: D = N</li>
-        <li>Superconducting qubit: D &asymp; 1</li>
-        <li>Many photon states: D = 1</li>
-      </ul>
-    </div>
-
-    <div class="step slide" data-scale="0.4" data-x="4000" data-y="400" data-z="500" data-rotate-y="-90" data-ref="fd">
-      <h1>Fisher Information</h1>
-      <p>A </p>
-    </div> -->
-
-    <div id="overview" class="step invisible" data-scale="5" data-x="1500" data-y="500"></div>
+    <div id="overview" class="step invisible" data-scale="6" data-x="0" data-y="500"></div>
   </div>
 
   <div class="invisible">
@@ -288,6 +346,9 @@
     </p>
     <p data-reflabel="fd">
       <a href="http://iopscience.iop.org/1367-2630/14/9/093039/">Fr&ouml;wis, D&uuml;r 2012</a>
+    </p>
+    <p data-reflabel="nh">
+      <a href="http://prl.aps.org/abstract/PRL/v110/i16/e160403">Nimmrichter, Hornberger 2013</a>
     </p>
   </div>
   

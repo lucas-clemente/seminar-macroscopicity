@@ -225,7 +225,26 @@ ul.unstyled {
 .impress-on-overview-disconnectivity #disconnectivity .step { opacity: 1; }
 .impress-on-overview-bm #bm .step { opacity: 1; }
 .impress-on-overview-mavd #mavd .step { opacity: 1; }
-.impress-on-overview-fd #fd .step { opacity: 1; }
+.impress-on-overview-fisher #fisher .step { opacity: 1; }
+
+.impress-on-nh-overview .step { opacity: 1; }
+.impress-on-nh-overview2 .step { opacity: 1; }
+
+#nh-overview q {
+  display: block;
+  text-align: center;
+  margin-top: 150px;
+  font-style: italic;
+  .transform(scale(0.7));
+  .transition(0.5s);
+  .transition-delay(0.5s);
+}
+
+#nh-overview.present, #nh-overview.past {
+  q {
+    .transform(scale(1));
+  }
+}
 
 .impress-on-overview .step {
   opacity: 1;
