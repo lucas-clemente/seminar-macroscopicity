@@ -330,6 +330,10 @@ ul.unstyled li {
   opacity: 1;
   cursor: pointer;
 }
+#summary q {
+  font-style: italic;
+  font-size: 0.75em;
+}
 #fin {
   display: none;
   position: fixed;
